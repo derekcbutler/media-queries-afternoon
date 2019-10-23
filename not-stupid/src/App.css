@@ -1,0 +1,143 @@
+.frame {
+  height: 150vh;
+}
+.body {
+  height: 90vh;
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header-bar {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 530;
+  font-family: "Satisfy", cursive;
+  margin-left: 200px;
+  color: rgb(240, 198, 53);
+}
+
+.menu-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 195px;
+}
+
+.menu {
+  color: white;
+  text-align: center;
+  padding: 10px 22px;
+  font-size: 18.5px;
+  font-weight: 400;
+}
+
+#burger-icon {
+  margin-right: 20px;
+}
+
+.drop-menu {
+  overflow: hidden;
+  position: fixed;
+  top: 30px;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-bottom-left-radius: 10px;
+}
+
+.hide {
+  animation-name: hide;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.show {
+  animation-name: show;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+
+@keyframes show {
+  0% {
+    height: 100px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-button {
+    display: none;
+  }
+  header {
+    background: transparent;
+  }
+}
+@media (min-width: 900px){
+  .menu-button {
+    display: none;
+  }
+}
+
+@media ()
+
+.main-pic {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.welcome-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.welcome-studio {
+  font-family: "Alegreya", serif;
+  font-style: italic;
+  color: white;
+  font-size: 50px;
+}
+.nice-to-meet {
+  color: white;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+}
+
+.tell-more {
+  background-color: rgb(240, 198, 53);
+  color: white;
+  padding: 30px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  border: none;
+  border-radius: 12px;
+}
